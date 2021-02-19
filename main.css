@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    font-family:'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 67.5;
+    background: #ef32d9;  
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+}
+header{
+    background-color: rgba(0, 0, 0, .9) ;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.newTask{
+    border: solid 1px  gray;
+    width: 8rem;
+    height: 2.2rem;
+    text-align: center;
+    border-radius: 1rem .5rem 1rem .5rem;
+    background-color: lime;
+    filter: drop-shadow(1px 2px 1px); 
+    cursor: pointer; 
+}
+.logo{
+    font-size: .8rem;
+}
+h2{
+    text-align: center;
+    color: black;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.containerTask{
+    width: 80vw;
+    margin: 0 auto;
+    height: 70vh;
+    max-height: 72rem;
+    scroll-behavior: auto;
+}
+.task{
+    width: 70%;
+    background-color: white;
+    border-radius: .5rem;
+    margin: .8rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: .8rem .5rem;
+    color: black;
+    box-shadow: 5px 5px 8px ;
+}
+.oneTask{
+    padding: .7rem 0;
+    border-bottom: 1px solid gray;
+}
+.taskContent{
+    width: 80%;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+.actions{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.modalNewTask{
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+    
+}
+form{
+    height: 80%;
+    width: 50%; 
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 8px;
+    padding: 0 1rem;
+}
+.inpuTask{
+    background-color: inherit;
+    padding: .7rem .4rem;
+    margin-bottom: 1rem;
+    border: 0;
+    color: black;
+    background-color: none;
+    border-bottom: .5px solid lightseagreen;
+}
+.inpuTask:focus,
+.inpuTask:active{
+    outline: none;
+    border-bottom: 1.5px solid lightseagreen;   
+}
+.submit{
+    background-color: blue;
+    padding: .8rem 0;
+    color: white;
+    border-radius: .5rem;
+}
+.complete,
+.delete{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.task-complete{
+    background-color:coral;
+}
+.p{
+    text-decoration:line-through;
+}

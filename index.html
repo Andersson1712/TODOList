@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+       <div class="logo">
+        <h1>GovaTask</h1>
+       </div>
+        <div class="newTask" id="newTask">
+            <span>
+                NewTask
+            </span>
+        </div>
+   </header>
+   <h2>Lista de tareas</h2>
+   <div class="modalNewTask" id="modalNewTask">
+    <form>
+        <label>Writer a new Task</label>
+        <input type="text" id="inpuTask" class="inpuTask">
+        <input type="submit" id="submit" class="submit">
+    </form>
+   </div>
+   <main>
+    <div class="containerTask" id="containerTask">
+    </div>    
+</main>
+<template id='template'>
+       <div class="task" id="task">
+           <div class="taskContent">
+               <p id="p"></p>
+           </div>
+           <div class="actions" id="actions">
+               <span class="complete">✔</span>
+               <span class="delete">🗑</span>
+           </div>
+       </div>
+   </template>
+    <script src="/index.js"></script>
+</body>
+</html>
